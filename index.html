@@ -122,8 +122,8 @@ var markers = L.markerClusterGroup({disableClusteringAtZoom: 20});
    iconSize: [38, 38],iconAnchor:  [19, 38],popupAnchor:  [0, -34] // point from which the popup should open relatitudeive to the iconAnchor
 }); }
 */
-      var marker = L.marker([row.Lat, row.Lon]).bindPopup("<b>LATITUDINE,LONGITUDINE: </b> " + row.Lat + "," + row.Lon + "<br /><b>TIPO DI CONNESSIONE: </b> " + row.TipoConn + "<br /><b>VELOCITA' DOWNLOAD: </b> " + row.veldown + "<br /><b>VELOCITA' UPLOAD: </b> " + row.velup + "<br /><b>IP INTERNO ED ESTERNO:</b> " + row.IPinterno + "," + row.IPesterno + "<br /><b>SERVER E URL:</b>"  + row.Server + " " + row.URL + "<br />").openPopup();
-      marker.bindTooltip("<span>" + row.veldown + " - "  +  row.velup + "</span>" , {permanent: true, direction: 'bottom'}).openTooltip();
+      var marker = L.marker([row.Lat, row.Lon]).bindPopup("<b>LATITUDINE,LONGITUDINE: </b> " + row.Lat + "," + row.Lon + "<br /><b>TIPO DI CONNESSIONE: </b> " + row.TipoConn + "<br /><b>VELOCITA' DOWNLOAD: </b> " + row.Veldown + "<br /><b>VELOCITA' UPLOAD: </b> " + row.Velup + "<br /><b>IP INTERNO ED ESTERNO:</b> " + row.IPinterno + "," + row.IPesterno + "<br /><b>SERVER E URL:</b>"  + row.Server + " " + row.URL + "<br />").openPopup();
+      marker.bindTooltip("<span>" + row.Veldown + " - "  +  row.Velup + "</span>" , {permanent: true, direction: 'bottom'}).openTooltip();
 	    
    markers.addLayer(marker); //Aggiungo il layer della mappa a quello dei cluster
 
