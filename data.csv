@@ -1,4 +1,4 @@
-Data,TipoConn,Lat,Lon,down load,DownloadBytes,up load,UploadBytes,Latenza,Server,IPinterno,IPesterno,URL
+Data,TipoConn,Lat,Lon,down,DownloadBytes,up,UploadBytes,Latenza,Server,IPinterno,IPesterno,URL
 "17/07/2021, 17:30",Lte,41.98795393109452,14.970640011682237,27.473544,40778464,9.316936,15396832,22,Roma,10.222.118.248,151.57.42.252,https://www.speedtest.net/my-result/a/7541032806
 "17/07/2021, 17:31",Lte,41.98795393109452,14.970640011682237,31.698264,36294240,13.552472,22403634,21,Roma,10.222.118.248,151.57.42.252,https://www.speedtest.net/my-result/a/7541035011
 "17/07/2021, 18:49",Wifi,41.98786499354743,14.970620916787526,52.403192,48915713,19.902704,33363568,14,Roma,192.168.1.124,151.76.196.70,https://www.speedtest.net/my-result/a/7541243519
