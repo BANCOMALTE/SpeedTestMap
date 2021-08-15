@@ -122,8 +122,8 @@ var markers = L.markerClusterGroup({disableClusteringAtZoom: 20});
    iconSize: [38, 38],iconAnchor:  [19, 38],popupAnchor:  [0, -34] // point from which the popup should open relatitudeive to the iconAnchor
 }); }
 */
-	    var down = row.down.toString()
-	    var up = row.up.toString()
+	    var down = row.data[4].toString()
+	    var up = row.data[6].toString()
       var marker = L.marker([row.Lat, row.Lon]).bindPopup("<b>LATITUDINE,LONGITUDINE: </b> " + row.Lat + "," + row.Lon + "<br /><b>TIPO DI CONNESSIONE: </b> " + row.TipoConn + "<br /><b>VELOCITA' DOWNLOAD: </b> " + down + "Mbps" + "<br /><b>VELOCITA' UPLOAD: </b> " + up + "Mbps"+ "<br /><b>IP INTERNO ED ESTERNO:</b> " + row.IPinterno + "," + row.IPesterno + "<br /><b>SERVER E URL:</b>"  + row.Server + " " + row.URL + "<br />").openPopup();
       marker.bindTooltip("<span>" + down + "Mbps" + " - "  +  up  + "Mbps"+ "</span>" , {permanent: false, direction: 'auto'}).openTooltip();
 	    
