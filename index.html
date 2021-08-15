@@ -125,7 +125,7 @@ var markers = L.markerClusterGroup({disableClusteringAtZoom: 20});
 	    var down = row.down.toString()
 	    var up = row.up.toString()
       var marker = L.marker([row.Lat, row.Lon]).bindPopup("<b>LATITUDINE,LONGITUDINE: </b> " + row.Lat + "," + row.Lon + "<br /><b>TIPO DI CONNESSIONE: </b> " + row.TipoConn + "<br /><b>VELOCITA' DOWNLOAD: </b> " + down + "Mbps" + "<br /><b>VELOCITA' UPLOAD: </b> " + up + "Mbps"+ "<br /><b>IP INTERNO ED ESTERNO:</b> " + row.IPinterno + "," + row.IPesterno + "<br /><b>SERVER E URL:</b>"  + row.Server + " " + row.URL + "<br />").openPopup();
-      marker.bindTooltip("<span>" + down + "Mbps" + " - "  +  up  + "Mbps"+ "</span>" , {permanent: true, direction: 'bottom'}).openTooltip();
+      marker.bindTooltip("<span>" + down + "Mbps" + " - "  +  up  + "Mbps"+ "</span>" , {permanent: false, direction: 'auto'}).openTooltip();
 	    
    markers.addLayer(marker); //Aggiungo il layer della mappa a quello dei cluster
 
