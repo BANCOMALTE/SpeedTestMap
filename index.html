@@ -87,10 +87,10 @@ var markers = L.markerClusterGroup({disableClusteringAtZoom: 20});
 
     // For each row in data, create a marker and add it to the map
     // For each row, columns `latitude`, `longitude`, and `Title` are required
-  
+   console.log(data[4])
 	  for (var i in data) {
       var row = data[i];
-	  console.log(data)
+	 
       /*
       var colorebande;
       if( row.Velocità_download == "Iliad Italia s.p.a") {  colorebande = "brown";
